@@ -1,0 +1,27 @@
+[project]
+name = "pyconit2025"
+authors = [
+    { name="Robin Castellani" }
+]
+description = "PyConIT 2025 talk named `Capire il cambiamento climatico con Python: dal rapporto IPCC all'azione climatica`"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "cdsapi>=0.7.6",
+    "geopandas>=1.0.1",
+    "imageio>=2.37.0",
+    "matplotlib>=3.10.3",
+    "netcdf4>=1.7.2",
+    "pandas>=2.2.3",
+    "pyam-iamc>=3.0.0",
+    "xarray>=2025.4.0",
+]
+
+# [build-system]
+# requires = ["setuptools>=61"]
+# build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
